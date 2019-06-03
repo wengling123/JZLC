@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper SYSTEM "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jzlc.mapper.ConsumerMapper">
+	<select id="personalLogin" resultType="Consumer">
+		<!-- select * from consumer where CONSUMERNAME=#{consumerName} and PASSWORD=#{password} -->
+		select * from consumer where consumername=#{consumerName} and password=#{password}
+	</select>
+</mapper>
